@@ -1,0 +1,31 @@
+/*
+Toujours commencer par le body et le style de la typo
+
+    1. Le style des paragraphes de notre projet sur le body
+    2. Option 1 les titres on le même 
+*/
+
+body{
+    color: rgb(215, 214, 244);
+    font-family: "Kulim parc", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0;
+
+    height: 3000px; /*pour la démo*/
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.backtotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+.backtotop--show{
+    display: inline;
+}

@@ -1,0 +1,109 @@
+/*
+Toujours commencer par le body et le style de la typo
+
+    1. Le style des paragraphes de notre projet sur le body
+    2. Option 1 les titres on le même 
+*/
+body{
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0;
+    background-color: #EFECE2;
+
+}
+
+.menu{
+    width: 80%;
+    margin: 40px auto;
+    position: relative;
+}
+
+.menu__liste{
+    list-style: none;
+    margin: 0;
+    
+    background-color:#2C2926;
+    border-radius: 6px;
+    box-shadow: 0px 10px 15px -3px #2C2926;
+
+    display: flex;
+    gap: 14px;
+
+    padding: 10px;
+}
+
+.menu__el > a{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu__el > a:hover,
+.menu__el > a:focus{
+    color:#BCA06F;
+}
+
+.menu__el--relative{
+    position: relative;
+}
+
+.menu__dropdown{
+    display: none;
+
+    list-style: none;
+    margin: 0;
+
+    position: absolute;
+    left: -19px;
+    top: 47px;
+
+    background-color:#2C2926;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 10px 15px -3px #4a3f2b;
+    border-radius: 0 0 6px 6px;
+}
+
+.menu__el:hover .menu__dropdown{
+    display: block;
+}
+.menu__el:hover .menu__megaDropDown{
+    display: flex;
+}
+
+.menu__dropdownEl a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu__dropdownEl a:hover,
+.menu__dropdownEl a:focus{
+    color:#BCA06F;
+}
+
+.menu__megaDropDown{
+    display: none;
+    background-color: #2C2926;
+    color: #ffffff;
+
+    position: absolute;
+    padding: 20px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0px 10px 15px -3px #4a3f2b;
+
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+
+}
+
+.menu__megaDropDown a{
+    text-decoration: none;
+    color: #bdb19b;
+
+}
